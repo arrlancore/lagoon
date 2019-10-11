@@ -3,6 +3,7 @@ module.exports = {
     // Projects having their own config
     "cli",
     "node-packages/commons",
+    "services/ui",
     "services/webhook-handler",
     // Everything else (specified in object notation to avoid Jest duplicate config error)
     {

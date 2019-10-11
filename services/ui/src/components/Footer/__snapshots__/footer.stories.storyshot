@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Jest storyshots Components|Footer Default 1`] = `
+<footer
+  className="jsx-620474052"
+>
+  Placeholder footer
+</footer>
+`;

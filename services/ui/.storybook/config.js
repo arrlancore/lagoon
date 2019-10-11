@@ -1,3 +1,4 @@
+import requireContext from 'require-context.macro';
 import { addDecorator, addParameters, configure } from '@storybook/react';
 import { withA11y } from '@storybook/addon-a11y';
 import { withKnobs } from '@storybook/addon-knobs';
@@ -18,7 +19,7 @@ const loaderFn = () => {
   allExports.push(require('./Home.stories'));
 
   // Automatically import all *.stories.js in these folders.
-  const storiesSrc = require.context('../src', true, /\.stories\.js$/);
+  const storiesSrc = requireContext('../src', true, /\.stories\.js$/);
   storiesSrc.keys().forEach(fname => allExports.push(storiesSrc(fname)));
 
   return allExports;
