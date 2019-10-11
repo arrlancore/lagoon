@@ -1,5 +1,5 @@
 import React from 'react';
-import GlobalStyles from 'layouts/global';
+import GlobalStyles from 'layouts/GlobalStyles';
 
 export default {
   title: 'Home|Welcome',
