@@ -31,10 +31,8 @@ const Backups = ({ backups }) => (
         <div className="data-row" key={backup.id}>
           <div className="source">{backup.source}</div>
           <div className="created">
-            {moment
-              .utc(backup.created)
-              .local()
-              .format('DD MMM YYYY, HH:mm:ss')}
+            {moment.tz(moment.tz.guess())
+              .format('DD MMM YYYY, HH:mm:ss z')}
           </div>
 
           <div className="backupid">{backup.backupId}</div>

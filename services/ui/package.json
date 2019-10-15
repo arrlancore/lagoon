@@ -25,6 +25,7 @@
     "isomorphic-unfetch": "^2.1.1",
     "moment": "^2.22.2",
     "moment-duration-format": "^2.2.2",
+    "moment-timezone": "^0.5.26",
     "next": "^8.0.3",
     "postcss-nested": "^3.0.0",
     "ramda": "^0.25.0",
